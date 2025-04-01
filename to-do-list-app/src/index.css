@@ -66,3 +66,28 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+/* .item-div{
+  display: flex;
+} */
+
+.item-list{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+ul{
+  margin-left: -40px;
+}
+
+.main-con{
+  text-align: center;
+}
+
+.btn-grp{
+  margin-top: 10px;
+}
