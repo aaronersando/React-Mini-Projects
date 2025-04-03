@@ -7,8 +7,12 @@ function ToDoList(){
 
     const handleAddTask = () =>{
         const newTask = document.getElementById("task-input").value
-        setTasks(t => [...t, newTask])
-        document.getElementById("task-input").value = ""
+
+        if(newTask){
+            setTasks(t => [...t, newTask])
+            document.getElementById("task-input").value = ""
+        }
+        
     }
 
     const handleRemoveTask = (index) => {
@@ -48,9 +52,9 @@ function ToDoList(){
     return(
         <>
             <div className="main-con">
-                <h1>To-Do-List</h1>
-                <input type="text" id="task-input" placeholder="Task Input"/>
-                <button onClick={handleAddTask}>Add</button>
+                <h1 id="todo-title">To-Do-List</h1>
+                <input type="text" id="task-input" placeholder="Enter task..."/>
+                <button id="add-btn" onClick={handleAddTask}>Add</button>
                 <ul>
                     {tasks.map((task, index) => 
                         <li key={index} className="item-list">
