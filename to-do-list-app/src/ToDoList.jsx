@@ -1,6 +1,5 @@
 import React, {useState} from "react"
 
-
 function ToDoList(){
 
     const [tasks, setTasks] = useState([])
@@ -58,15 +57,13 @@ function ToDoList(){
                 <ul>
                     {tasks.map((task, index) => 
                         <li key={index} className="item-list">
-                            {/* <div className="item-div"> */}
                                 <p className="task-name">{task}</p>
                                 <div className="btn-grp">
                                     <button className="delete-btn" onClick={() => handleRemoveTask(index)}>Delete</button>
                                     <button className="up-btn" onClick={() => handleUpTask(index)}>👆</button>
                                     <button className="down-btn" onClick={() => handleDownTask(index)}>👇</button>
                                 </div>
-                                
-                            {/* </div> */}
+
                         </li>
                     )}
                 </ul>
