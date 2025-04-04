@@ -1,7 +1,13 @@
 import Clock from "./Clock"
 
 function App() {
-  <Clock/>
+
+  return(
+    <>
+    <Clock/>
+    </>
+  )
+  
 }
 
 export default App
