@@ -55,9 +55,9 @@ function Stopwatch(){
         <div className="main-con">
             <h2 className="timer">{timeFormat()}</h2>
             <div className="btn-grp">
-                <button className="start" onClick={handleStart}>Start</button>
-                <button className="Stop" onClick={handleStop}>Stop</button>
-                <button className="Reset" onClick={handleReset}>Reset</button>
+                <button className="start btn" onClick={handleStart}>Start</button>
+                <button className="Stop btn" onClick={handleStop}>Stop</button>
+                <button className="Reset btn" onClick={handleReset}>Reset</button>
             </div>
         </div>
         </>
